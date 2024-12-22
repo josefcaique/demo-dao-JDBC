@@ -44,9 +44,16 @@ public class Main {
         sellerDao.deleteById(newSeller.getId());
         System.out.println("Seller Deleted");
 
+
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
-        System.out.println("=== TEST 2.1: finding by id ===");
+        System.out.println("\n=== TEST 2.1: finding by id ===");
         Department department1 = departmentDao.findById(3);
         System.out.println(department1);
+
+        System.out.println("\n=== TEST 2.5: department update ===");
+        department1 = departmentDao.findById(4);
+        department1.setName("RH");
+        departmentDao.update(department1);
+        System.out.println("Department updated");
     }
 }
