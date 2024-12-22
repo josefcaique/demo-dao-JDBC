@@ -50,6 +50,12 @@ public class Main {
         Department department1 = departmentDao.findById(3);
         System.out.println(department1);
 
+        System.out.println("\n=== TEST 2.2: finding all ===");
+        List<Department> list3  = departmentDao.findAll();
+        for (Department obj: list3){
+            System.out.printf("Name: %s%n", obj.getName());
+        }
+
         System.out.println("\n=== TEST 2.5: department update ===");
         department1 = departmentDao.findById(4);
         department1.setName("RH");
