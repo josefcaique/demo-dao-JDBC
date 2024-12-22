@@ -56,6 +56,11 @@ public class Main {
             System.out.printf("Name: %s%n", obj.getName());
         }
 
+        System.out.println("\n=== TEST 2.3: department insert ===");
+        Department newDepartment = new Department(null, "I4.0");
+        //departmentDao.insert(newDepartment);
+        System.out.println("Department inserted");
+
         System.out.println("\n=== TEST 2.5: department update ===");
         department1 = departmentDao.findById(4);
         department1.setName("RH");
