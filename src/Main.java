@@ -58,8 +58,12 @@ public class Main {
 
         System.out.println("\n=== TEST 2.3: department insert ===");
         Department newDepartment = new Department(null, "I4.0");
-        //departmentDao.insert(newDepartment);
+        departmentDao.insert(newDepartment);
         System.out.println("Department inserted");
+
+        System.out.println("\n=== TEST 2.4: seller delete ===");
+        departmentDao.deleteById(newDepartment.getId());
+        System.out.println("Seller Deleted");
 
         System.out.println("\n=== TEST 2.5: department update ===");
         department1 = departmentDao.findById(4);
