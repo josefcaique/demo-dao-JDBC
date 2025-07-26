@@ -77,7 +77,3 @@ src/
 📚 Projeto desenvolvido exclusivamente para fins educacionais.
 
 ---
-
-## 📄 Licença
-
-Uso livre para estudo e aprendizado.
